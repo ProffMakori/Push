@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Detail</title>
+</head>
+<body>
+<h2>Video Detail</h2>
+<div>
+    <h3>{{ video.title }}</h3>
+    <video width="320" height="240" controls>
+        <source src="{{ video.video_file.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>
